@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <!-- Sky & Atmosphere -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <!-- Asphalt Road Gradient -->
+    <linearGradient id="asphaltGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="40%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <!-- Pothole Inner Depth Gradient -->
+    <radialGradient id="potholeDepth" cx="45%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="65%" stop-color="#0f172a"/>
+      <stop offset="85%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </radialGradient>
+    <!-- Water puddle inside pothole -->
+    <radialGradient id="waterReflect" cx="40%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#0284c7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.05"/>
+    </radialGradient>
+    <!-- Concrete Curb Gradient -->
+    <linearGradient id="curbGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Sky & Distant City Horizon -->
+  <rect width="800" height="260" fill="url(#skyGrad)"/>
+  
+  <!-- Distant City Silhouette -->
+  <path d="M 0 260 L 0 200 L 40 200 L 40 180 L 70 180 L 70 210 L 120 210 L 120 170 L 160 170 L 160 220 L 230 220 L 230 190 L 280 190 L 280 230 L 350 230 L 350 160 L 400 160 L 400 240 L 470 240 L 470 200 L 530 200 L 530 175 L 580 175 L 580 220 L 660 220 L 660 195 L 720 195 L 720 240 L 800 240 L 800 260 Z" fill="#64748b" opacity="0.45"/>
+  <path d="M 0 260 L 0 220 L 60 220 L 60 205 L 110 205 L 110 230 L 190 230 L 190 215 L 260 215 L 260 235 L 340 235 L 340 210 L 410 210 L 410 245 L 510 245 L 510 225 L 600 225 L 600 240 L 700 240 L 700 215 L 800 215 L 800 260 Z" fill="#475569" opacity="0.6"/>
+
+  <!-- Sidewalk & Curb (Left & Right) -->
+  <polygon points="0,260 180,260 40,600 0,600" fill="url(#curbGrad)"/>
+  <polygon points="620,260 800,260 800,600 760,600" fill="url(#curbGrad)"/>
+
+  <!-- Road Surface (Asphalt Perspective) -->
+  <polygon points="180,260 620,260 760,600 40,600" fill="url(#asphaltGrad)"/>
+
+  <!-- Asphalt Texture Speckles & Minor Cracks -->
+  <g opacity="0.15" stroke="#ffffff" stroke-width="1">
+    <line x1="220" y1="300" x2="235" y2="304"/>
+    <line x1="310" y1="285" x2="330" y2="288"/>
+    <line x1="480" y1="290" x2="500" y2="295"/>
+    <line x1="560" y1="310" x2="580" y2="315"/>
+    <line x1="160" y1="420" x2="190" y2="425"/>
+    <line x1="600" y1="440" x2="630" y2="445"/>
+  </g>
+
+  <!-- Broken White Road Markings (Dashed Center Line with Wear & Tear) -->
+  <polygon points="395,265 405,265 408,310 392,310" fill="#f8fafc" opacity="0.75"/>
+  <polygon points="390,345 410,345 415,415 385,415" fill="#f8fafc" opacity="0.7"/>
+  <!-- Broken center stripe near pothole -->
+  <path d="M 382 455 L 418 455 L 420 480 L 395 482 L 398 510 L 378 510 Z" fill="#f8fafc" opacity="0.65"/>
+  <polygon points="372,555 428,555 435,600 365,600" fill="#f8fafc" opacity="0.8"/>
+
+  <!-- CRACKS SPREADING FROM POTHOLE -->
+  <g stroke="#090d16" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M 330 430 Q 280 420 220 440 T 170 470"/>
+    <path d="M 280 420 Q 250 390 220 380"/>
+    <path d="M 450 420 Q 520 410 570 435 T 620 480"/>
+    <path d="M 500 450 Q 540 480 580 500"/>
+    <path d="M 360 480 Q 320 520 280 550"/>
+    <path d="M 430 480 Q 470 530 490 570"/>
+  </g>
+  <g stroke="#0f172a" stroke-width="1.5" stroke-linecap="round" fill="none">
+    <path d="M 320 425 Q 300 405 270 400"/>
+    <path d="M 460 425 Q 490 395 530 390"/>
+    <path d="M 380 490 Q 370 530 350 560"/>
+    <path d="M 420 490 Q 440 530 450 580"/>
+  </g>
+
+  <!-- MAIN DEEP POTHOLE (LUBANG BESAR) -->
+  <!-- Outer ragged lip / displaced asphalt rim -->
+  <path d="M 280 420 Q 330 395 400 400 Q 470 395 520 415 Q 560 440 540 470 Q 510 500 420 505 Q 340 510 290 485 Q 260 455 280 420 Z" fill="#475569" stroke="#1e293b" stroke-width="4"/>
+  <!-- Dark cavity -->
+  <path d="M 290 425 Q 340 405 400 408 Q 460 405 505 422 Q 540 445 525 468 Q 495 495 420 498 Q 345 502 300 480 Q 275 455 290 425 Z" fill="url(#potholeDepth)"/>
+  <!-- Puddle of muddy rain water inside -->
+  <ellipse cx="400" cy="460" rx="90" ry="25" fill="url(#waterReflect)"/>
+  <!-- Broken asphalt chunks inside & around -->
+  <polygon points="310,440 325,435 330,448 315,452" fill="#0f172a" stroke="#334155"/>
+  <polygon points="460,455 480,450 485,465 465,470" fill="#0f172a" stroke="#334155"/>
+  <polygon points="370,470 390,465 395,480 375,482" fill="#0f172a" stroke="#334155"/>
+  <polygon points="245,455 260,450 265,462 250,466" fill="#334155"/>
+  <polygon points="535,435 550,430 555,442 540,446" fill="#334155"/>
+
+  <!-- TRAFFIC SAFETY CONE (Warning Marker on left) -->
+  <g transform="translate(210, 360)">
+    <!-- Base -->
+    <ellipse cx="30" cy="85" rx="35" ry="12" fill="#1e293b" opacity="0.6"/>
+    <polygon points="5,82 55,82 50,88 0,88" fill="#ea580c"/>
+    <!-- Orange Body -->
+    <polygon points="12,82 48,82 34,5 26,5" fill="#f97316"/>
+    <!-- White Reflective Stripes -->
+    <polygon points="17,62 43,62 40,46 20,46" fill="#ffffff"/>
+    <polygon points="22,34 38,34 35,22 25,22" fill="#ffffff"/>
+    <!-- Tip & Highlight -->
+    <ellipse cx="30" cy="5" rx="4" ry="2" fill="#ea580c"/>
+    <polygon points="12,82 20,82 30,5 26,5" fill="#ffffff" opacity="0.2"/>
+  </g>
+
+  <!-- OVERLAY BADGE (Editorial Civic Stamp) -->
+  <g transform="translate(24, 24)">
+    <rect width="210" height="42" rx="8" fill="#991b1b" fill-opacity="0.95" stroke="#fca5a5" stroke-width="1.5"/>
+    <circle cx="24" cy="21" r="10" fill="#fee2e2"/>
+    <text x="24" y="26" font-family="system-ui, sans-serif" font-size="14" font-weight="900" fill="#991b1b" text-anchor="middle">!</text>
+    <text x="44" y="19" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#ffffff" letter-spacing="0.5">KONDISI SEBELUM</text>
+    <text x="44" y="32" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#fecaca">Lubang Amblas &amp; Retak Kritis</text>
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <!-- Sunny Bright Sky -->
+    <linearGradient id="skySunny" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="60%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+    <!-- Fresh Smooth Hotmix Asphalt -->
+    <linearGradient id="freshAsphalt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="40%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <!-- Pristine Concrete Curb & Green Verge -->
+    <linearGradient id="cleanCurb" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="40%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <!-- Green Landscape -->
+    <linearGradient id="greenVerge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clear Blue Sky -->
+  <rect width="800" height="260" fill="url(#skySunny)"/>
+
+  <!-- Distant Clean City Skyline & Trees -->
+  <path d="M 0 260 L 0 210 L 40 210 L 40 180 L 80 180 L 80 220 L 140 220 L 140 170 L 190 170 L 190 230 L 250 230 L 250 190 L 320 190 L 320 160 L 380 160 L 380 240 L 460 240 L 460 175 L 520 175 L 520 220 L 600 220 L 600 185 L 670 185 L 670 230 L 730 230 L 730 200 L 800 200 L 800 260 Z" fill="#93c5fd" opacity="0.4"/>
+  
+  <!-- Green Treeline along road -->
+  <path d="M 0 260 Q 30 230 70 260 Q 110 235 150 260 Q 190 230 230 260 Q 270 240 310 260 L 310 260 L 800 260 L 800 260 Z" fill="#22c55e" opacity="0.3"/>
+  <path d="M 480 260 Q 530 230 580 260 Q 630 235 680 260 Q 730 230 780 260 L 800 260 L 800 260 Z" fill="#22c55e" opacity="0.3"/>
+
+  <!-- Sidewalk, Green Verge, and Clean Curbs -->
+  <polygon points="0,260 180,260 40,600 0,600" fill="url(#cleanCurb)"/>
+  <polygon points="620,260 800,260 800,600 760,600" fill="url(#cleanCurb)"/>
+  <!-- Decorative clean curb lines -->
+  <line x1="180" y1="260" x2="40" y2="600" stroke="#64748b" stroke-width="4"/>
+  <line x1="620" y1="260" x2="760" y2="600" stroke="#64748b" stroke-width="4"/>
+
+  <!-- Brand New Hotmix Asphalt Surface (100% Repaired & Smooth) -->
+  <polygon points="180,260 620,260 760,600 40,600" fill="url(#freshAsphalt)"/>
+
+  <!-- Subtle Fresh Asphalt Sheen (Smooth & Uniform) -->
+  <polygon points="260,260 540,260 640,600 160,600" fill="#ffffff" opacity="0.04"/>
+
+  <!-- Solid White Edge Lines (Garis Tepi Jalan Sempurna) -->
+  <polygon points="190,260 196,260 66,600 58,600" fill="#ffffff" opacity="0.95"/>
+  <polygon points="604,260 610,260 742,600 734,600" fill="#ffffff" opacity="0.95"/>
+
+  <!-- Crisp, Brand New Center Dashed Stripes (Marka Jalan Baru) -->
+  <polygon points="396,265 404,265 406,310 394,310" fill="#ffffff"/>
+  <polygon points="393,340 407,340 411,410 389,410" fill="#ffffff"/>
+  <polygon points="387,445 413,445 419,535 381,535" fill="#ffffff"/>
+  <polygon points="378,570 422,570 426,600 374,600" fill="#ffffff"/>
+
+  <!-- Yellow Pedestrian Guidance Chevron / Arrow Ahead -->
+  <g fill="#facc15" opacity="0.85">
+    <polygon points="400,320 408,328 404,328 400,324 396,328 392,328"/>
+  </g>
+
+  <!-- OVERLAY BADGE (Editorial Civic Stamp - Selesai) -->
+  <g transform="translate(24, 24)">
+    <rect width="230" height="42" rx="8" fill="#065f46" fill-opacity="0.95" stroke="#6ee7b7" stroke-width="1.5"/>
+    <circle cx="24" cy="21" r="10" fill="#d1fae5"/>
+    <!-- Checkmark icon -->
+    <path d="M 19 21 L 22 24 L 29 17" stroke="#065f46" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="44" y="19" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#ffffff" letter-spacing="0.5">KONDISI SESUDAH</text>
+    <text x="44" y="32" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#a7f3d0">Pengaspalan Hotmix 100% Tuntas</text>
+  </g>
+</svg>
